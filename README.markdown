@@ -1,3 +1,3 @@
-Blog post here:
-
-TODO
+rake db:create
+rake db:migrate
+rake db:seed
