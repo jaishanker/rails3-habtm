@@ -1,0 +1,14 @@
+<%= form_for(@product) do |f| %>
+  <%= render :partial => 'shared/errors', :locals => { :rec => @product } %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+
+  <%= render :partial => 'edit_categories' %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
